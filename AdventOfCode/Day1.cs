@@ -2,7 +2,7 @@
 // PART 1
 
 // read file
-var input = System.IO.File.ReadAllText(@"..\..\..\Day1\input.txt").Trim();
+var input = System.IO.File.ReadAllText(@"..\..\..\input.txt").Trim();
 Console.WriteLine("INPUT:\n" + input);
 
 // split into groups

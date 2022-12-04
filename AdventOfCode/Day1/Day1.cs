@@ -1,4 +1,7 @@
-﻿// read file
+﻿// DAY 1
+// PART 1
+
+// read file
 var input = System.IO.File.ReadAllText(@"..\..\..\Day1\input.txt").Trim();
 Console.WriteLine("INPUT:\n" + input);
 
@@ -22,4 +25,15 @@ foreach (var group in numGroups)
 // get max in collection
 var max = sumGroups.Max();
 Console.WriteLine("SUM GROUPS:\n" + max);
-return max;
+
+// PART 2
+
+// sum top 3
+var topThreeSum = 0;
+for (int i = 0; i < 3; i++)
+{
+    topThreeSum += max;
+    sumGroups.Remove(max);
+    max = sumGroups.Max();
+}
+Console.WriteLine("TOP THREE SUM: \n" + topThreeSum);
